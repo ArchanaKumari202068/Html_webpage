@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none ;
+}
+.Sidebar{
+    position: fixed;
+    left:-250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.Sidebar header{
+    font-size:20px;
+    color:white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+
+     
+}
+
+.Sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+}
+ul li:hover a,header{
+    padding-left :50px;
+    background-color: white;
+   transform: scale(.9);
+    color: black;
+}
+ul li:hover i{
+    color:#063146
+}
+.Sidebar ul a i{
+    margin-right: 16px;
+    color: white;
+}
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn{
+    left:40px;
+    top:25px;
+    font-size:35px ;
+    color: rgb(249, 246, 246);
+    padding:6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index:1111;
+    left:-197px;
+    top:17px;
+    font-size:30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~  .Sidebar{
+    left: 0;
+}
+#check:checked ~  label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~  label #cancel{
+    left: 195px;
+}
+/* section{
+    background-image: url(img1.jpg); 
+    width: 100%;
+
+    background-size: cover;
+    height: auto;
+    transition: all .5s ease;
+   
+} */
+
+.wrapper {
+    
+    width: 100%;
+    margin-left: 16%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
