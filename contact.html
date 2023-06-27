@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contact.css" />
   </head>
   <body>
-    <h1>CONTACT</h1>
-    <div class="form">
-      <img src="img1.jpg">
-      <ul style="margin-top: 35px;"><li>PHOTO : </li>
-       <li style="list-style:none;"><div class="photo" style="width: 14%;height: 25%;border: 1px solid black;"><input  type ="file" id="img" name="img" accept="image/*">
-      <i class="material-icons" style="font-size: 150px;text-align: center;"></i></div></li><br>
-      <li> NAME : <input placeholder="FIRST MIDDLE LAST"></li>
-      <br><li>FATHER's NAME : <input placeholder=""></li><br>
-      <li>MOTHER's NAME : <input placeholder=""></li><br>
-      <li>DATE of BIRTH : <input type ="datetime-local"placeholder="DATE of BIRTH"></li><br>
-      <li>STATE of ORIGIN: <input placeholder=""></li><br>
-      <li>HOME ADDRESS : <input  type ="" placeholder=""></li><br>
-      <li>PHONE NO. : <input type ="number"placeholder=""></li><br>
-      <li>EMAIL ID : <input type ="email"placeholder=""></li><br>
-      <li>EMAIL PASSWORD : <input type ="password" placeholder="PASSWORD"></li><br>
-      <li>AADHAR NO. : <input type ="number"placeholder=""></li><br>
-      <li>AGE : <input placeholder=""></li><br>
-      <li>GENDER : <input placeholder=""></li><br>
-      
-      
-      </ul>   
-      </div>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>Menu</header>
+      <a href="/" class="">
+        <i class="fas fa-qrcode"></i>
+        <span>Home</span>
+      </a>
+      <!-- <a href="#">
+        <i class="fas fa-link"></i>
+        <span>Shortcuts</span>
+      </a> -->
+      <!-- <a href="#">
+        <i class="fas fa-stream"></i>
+        <span>Overview</span>
+      </a> -->
+      <a href="/guide.html">
+        <i class="fas fa-calendar"></i>
+        <span>Guide</span>
+      </a>
+      <a href="/info.html">
+        <i class="far fa-question-circle"></i>
+        <span>Information</span>
+      </a>
+      <!-- <a href="#">
+        <i class="fas fa-sliders-h"></i>
+        <span>Services</span>
+      </a> -->
+      <a href="/contact.html" class="active">
+        <i class="far fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+
+    <div class="frame">
+      <form>
+        <input
+          name="name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="feedback-input"
+          placeholder="Email"
+        />
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
   </body>
 </html>

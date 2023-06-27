@@ -1,24 +1,15 @@
-<!-- 1. Create an HTML page on which the left side should be home, contact, information, and guide. -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Sidebar Menu</title>
-    <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <input type="checkbox" id="check" />
@@ -26,47 +17,40 @@
       <i class="fas fa-bars" id="btn"></i>
       <i class="fas fa-times" id="cancel"></i>
     </label>
-    <div class="Sidebar">
-      <header>Menu Bar</header>
-      <ul>
-        <li>
-          <a href="home.html"
-            ><i
-              class="fa fa-home"
-              style="font-size: 20px; color: rgb(156, 194, 231)"
-            ></i
-            >HOME</a
-          >
-        </li>
-        <li>
-          <a href="contact.html"
-            ><i
-              class="fa fa-user"
-              style="font-size: 20px; color: rgb(156, 194, 231)"
-            ></i
-            >CONTACT</a
-          >
-        </li>
-        <li>
-          <a href="info.html"
-            ><i
-              class="fa fa-info-circle"
-              style="font-size: 20px; color: rgb(156, 194, 231)"
-            ></i
-            >INFO</a
-          >
-        </li>
-        <li>
-          <a href="guide.html"
-            ><i
-              class="fa-solid fa-book-open-reader"
-              style="font-size: 20px; color: rgb(156, 194, 231)"
-            ></i
-            >GUIDE</a
-          >
-        </li>
-      </ul>
+    <div class="sidebar">
+      <header>Menu</header>
+      <a href="/" class="active">
+        <i class="fas fa-qrcode"></i>
+        <span>Home</span>
+      </a>
+      <!-- <a href="#">
+        <i class="fas fa-link"></i>
+        <span>Shortcuts</span>
+      </a> -->
+      <!-- <a href="#">
+        <i class="fas fa-stream"></i>
+        <span>Overview</span>
+      </a> -->
+      <a href="/guide.html">
+        <i class="fas fa-calendar"></i>
+        <span>Guide</span>
+      </a>
+      <a href="/info.html">
+        <i class="far fa-question-circle"></i>
+        <span>Information</span>
+      </a>
+      <!-- <a href="#">
+        <i class="fas fa-sliders-h"></i>
+        <span>Services</span>
+      </a> -->
+      <a href="/contact.html">
+        <i class="far fa-envelope"></i>
+        <span>Contact</span>
+      </a>
     </div>
-   <div class="wrapper"></div>
+
+    <div class="frame">
+      <h1>Home Page</h1>
+    </div>
   </body>
 </html>
